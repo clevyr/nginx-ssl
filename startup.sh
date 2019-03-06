@@ -10,9 +10,7 @@ do
     domainString="$domainString -d $domain"
 done
 
-echo "$domainString"
-
-echo "certbot --nginx -m $EMAIL $domainString --agree-tos -n --redirect"
+certbot --nginx -m $EMAIL $domainString --agree-tos -n --redirect
 
 >&2 echo "SSL Certs are created - executing command"
 
