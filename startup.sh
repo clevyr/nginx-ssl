@@ -11,6 +11,7 @@ do
 done
 
 certbot --nginx -m $EMAIL $domainString --agree-tos -n --redirect
+killall nginx
 
 >&2 echo "SSL Certs are created - executing command"
 
