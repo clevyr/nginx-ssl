@@ -13,8 +13,7 @@ This image does not send your email to the EFF, and it assumes you agree to the 
 
 Change `/etc/nginx/conf.d/default.conf` if you need to customize the image, the default is below:
 
-
-```
+```nginx
 server {
     listen       80;
     server_name  localhost;
