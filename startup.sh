@@ -17,7 +17,7 @@ if [ $AUTH == "true" ]; then
             exit
         fi
     done <<< "$HASHES"
-    echo username:$(openssl passwd -apr1 ${PASSWORD}) >> /etc/nginx/.htpasswd
+    echo ${USERNAME}:$(openssl passwd -apr1 ${PASSWORD}) >> /etc/nginx/.htpasswd
     sed -i '/location/a auth_basic "Restricted Content";\nauth_basic_user_file /etc/nginx/.htpasswd;' /etc/nginx/conf.d/default.conf
     >&2 echo "Authentication is set"
 fi
