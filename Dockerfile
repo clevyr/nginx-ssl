@@ -7,7 +7,6 @@ ENV USERNAME username
 ENV PASSWORD password
 
 RUN apt-get update \
-    && apt-get upgrade \
     && apt-get install -y software-properties-common gpg curl \
     && add-apt-repository -y ppa:certbot/certbot \
     && apt-get install -y python-certbot-nginx \
