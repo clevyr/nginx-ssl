@@ -15,7 +15,7 @@ Set `USERNAME` and `PASSWORD` to control auth
 
 Authentication will not work if you use a file other than `/etc/nginx/conf.d/default.conf`, and it applies to all `location` blocks
 
-This image does not send your email to the EFF, and it assumes you agree to the TOS of Certbot
+This image does not send your email to the EFF, and it assumes you agree to the TOS of Acme <https://letsencrypt.org/documents/LE-SA-v1.2-November-15-2017.pdf>
 
 Change `/etc/nginx/conf.d/default.conf` if you need to customize the image, the default is below:
 
