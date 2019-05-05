@@ -1,5 +1,7 @@
 # clevyr/nginx-ssl
 
+[![](https://images.microbadger.com/badges/image/clevyr/nginx-ssl.svg)](https://microbadger.com/images/clevyr/nginx-ssl "Get your own image badge on microbadger.com")
+
 ## Usage
 
 This is the `nginx:latest` Docker image with SSL support
